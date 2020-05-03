@@ -122,7 +122,7 @@ export default {
              this.$cookie.delete('fullname');
             this.$cookie.delete('mobile');
           }
-          this.$router.push({path:'/qr-code',query: { ic:this.ic}})
+          this.$router.push({name: 'QRCode', params: { form: this.form}})
           console.log('submit!!');
         } else {
           console.log('error submit!!');

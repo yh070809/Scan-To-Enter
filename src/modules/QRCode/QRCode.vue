@@ -15,12 +15,17 @@ export default {
   name: 'QRCode',
   data () {
     return {
-      value:moment().format(),
+      //value:this.$route.params.form,
+      value: this.$route.params.form.ic + ' ' + moment().format() + ' '+ this.$route.params.form.mobile_number ,
       size: 290
     }
   },
   components: {
       QrcodeVue,
     },
+  // mounted(){
+  //   console.log(this.$route.params.form)
+  //   console.log('hahaha')
+  // }
 }
 </script>
