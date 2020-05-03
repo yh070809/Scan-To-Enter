@@ -13,6 +13,7 @@
     "ant-design-vue": "^1.5.4",
     "qrcode.vue": "^1.7.0",
     "vue": "^2.5.2",
+    "vue-cookie": "^1.1.4",
     "vue-moment": "^4.1.0",
     "vue-router": "^3.0.1"
   },

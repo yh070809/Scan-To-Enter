@@ -35,11 +35,13 @@ export default {
     methods: {
     onCheckin: function() {
         console.log('Check in')
-        window.location.href = "/form";
+        // window.location.href = "/form";
+        this.$router.push({path:'/form',query: { check:'Check in'}})
       },
     onCheckOut: function(){
       console.log('Check Out !')
-      window.location.href = "/form";
+     // window.location.href = "/form";
+     this.$router.push({path:'/form',query: { check:'Check out'}})
     }
   },
 }
